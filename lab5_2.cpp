@@ -1,7 +1,23 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
-
+string mixText(string s1,string s2){
+	int L1 = s1.size();
+	int L2 = s2.size();
+	int L = L1+L2;
+	string s ="";
+	if(L1 != L2){
+		cout << "E";
+	}else{
+		int i = 0;
+		while(i < L){
+			s = s + s1[i] + s2[i];
+			i++; 
+		}
+		return s;
+	}
+}
 
 
 int main(){	
